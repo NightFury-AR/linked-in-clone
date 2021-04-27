@@ -1,0 +1,143 @@
+.sideBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .sideBar__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 0.1px solid lightgray;
+    overflow: hidden;
+    .sideBar__top__cover {
+      object-fit: cover;
+      height: 60px;
+      width: 100%;
+    }
+    .sideBar__avatar {
+      object-fit: contain;
+      width: 65px;
+      height: 65px;
+      margin-top: -40px;
+      border: 3px solid white;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+      padding-top: 15px;
+    }
+    h4 {
+      font-size: 12px;
+      font-weight: normal;
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+    .divider {
+      color: #f3f2ef;
+      line-height: 0.1px;
+      opacity: 0.5;
+      width: 100%;
+    }
+    .sideBar__top__desc {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
+      .sideBar__top__desc__section {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+        cursor: pointer;
+        .desc__head {
+          font-size: 12px;
+          font-weight: 600;
+          color: grey;
+        }
+        .desc__value {
+          font-size: 12px;
+          color: blue;
+          font-weight: bold;
+        }
+        &:hover {
+          background-color: rgba(211, 211, 211, 0.575);
+        }
+      }
+    }
+    .sideBar__myItems {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      height: 20px;
+      width: 100%;
+      justify-content: flex-start;
+      .desc__head {
+        font-size: 5px;
+        font-weight: 600;
+        color: grey;
+        padding-left: 15px;
+      }
+      .desc__value {
+        font-size: 12px;
+        padding-left: 12px;
+      }
+      &:hover {
+        background-color: rgba(211, 211, 211, 0.575);
+      }
+    }
+  }
+  .sideBar__bottom {
+    position:sticky;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 0.1px solid lightgray;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    .sideBar__bottom__head {
+        width: 100%;
+        font-size:12px;
+        display: flex;
+        padding: 10px;
+        padding-left:35px;
+        color: rgb(70, 67, 67);
+        cursor: pointer;
+    }
+    
+  }
+}
+
+.recentsSideBar {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding:5px;
+    padding-left: 35px;
+    span {
+        padding-right: 20px;
+        font-size:12px;
+        font-weight: bold;
+    }
+    p {
+        font-size:12px;
+        font-weight:600;
+        color: grey;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(211, 211, 211, 0.575);
+      }
+}
+
+.toggleArrow {
+    margin-left: auto;
+    align-self: center;
+    margin-right: 20px;
+    font-size: 10px !important;
+}

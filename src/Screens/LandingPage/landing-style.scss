@@ -1,0 +1,87 @@
+.landing {
+    display: grid;
+    grid-template-columns: 1.5fr 9fr 1.5fr;
+    min-height: 100vh;
+    background-color:white;
+    .landing__bg {
+        position: fixed;
+        right: 100px;
+        top: 150px;
+        width:600px;
+    }
+    .landing__container {
+        display: flex;
+        flex-direction:column;
+        padding-top: 10px;
+
+        .landing__header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .landing__logo {
+                object-fit:contain;
+                height: 35px;
+            }
+            .landing__buttons {
+                display: flex;
+                flex-direction: row;
+                .landing__btn {
+                    padding:10px 15px;
+                    margin-right: 10px;
+                    border-radius:8px;
+                    text-decoration: none;
+                    color: grey;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: lightgray;
+                    }
+                }
+                .blue {
+                    color:#0A66C2;
+                    border-radius:20px;
+                    border: 1px solid #0A66C2;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #0a66c250;
+                    }
+                }
+               
+            }
+        }
+
+        .landing__jumbo {
+            display: flex;
+            margin-top:50px;
+            font-size:55px;
+            color:#0A66C2;
+            width:700px;
+        }
+
+        .landing__actions {
+            margin-top:50px;
+            .landing__action {
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                width:400px;
+                padding: 15px 20px;
+                font-size: 20px;
+                border-radius:8px;
+                border: 1px solid lightgray;
+                margin-bottom: 20px;
+                .arrow {
+                    margin-right: 10px;
+                    margin-left: auto;
+                    font-size: 30px;
+                    width:5px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    -webkit-box-shadow: -4px 5px 10px -4px rgb(158, 155, 158);
+                    -moz-box-shadow: -4px 5px 10px -4px rgb(158, 155, 158);
+                    box-shadow: -4px 5px 10px -4px rgb(158, 155, 158);
+                }
+            }
+        }
+    }
+}

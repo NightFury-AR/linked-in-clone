@@ -1,0 +1,51 @@
+.postActions {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    .postAction {
+        display: flex;
+        justify-content:space-evenly;
+        width: 30%;
+    }
+    .actionButtons
+    {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        justify-content:space-evenly;
+    .postButton {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-size:12px;
+        border-radius:18px;
+        background-color: lightgray;
+        width:80px;
+        height: 30px;
+        margin-right: 20px;
+        background-color: rgba(211, 211, 211, 0.575);
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(33, 74, 253, 0.575);
+          }
+    }
+    .closeButton {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-size:12px;
+        border-radius:18px;
+        background-color: lightgray;
+        width:80px;
+        height: 30px;
+        &:hover {
+            cursor: pointer;
+            opacity:.7;
+          }
+    }
+}
+}

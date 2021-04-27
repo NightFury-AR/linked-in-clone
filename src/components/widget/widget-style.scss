@@ -1,0 +1,114 @@
+.widget {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .widget__top {
+    background-color: white;
+    border-radius: 8px;
+    border: 0.1px solid lightgray;
+    margin-bottom: 10px;
+    overflow: hidden;
+    .widget__header {
+        width: 90%;
+        font-weight: 600;
+        color: rgb(44, 44, 44);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+  }
+  .widget__middle {
+    background-color: white;
+    border-radius: 8px;
+    border: 0.1px solid lightgray;
+    margin-bottom: 10px;
+    overflow: hidden;
+    .widget__header {
+        font-weight: 600;
+        color: rgb(44, 44, 44);
+        display: flex;
+        align-items: center;
+        width: 90%;
+        font-weight: 600;
+        color: rgb(44, 44, 44);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+  }
+  .widget__bottom {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .widget__bottom__image {
+        object-fit: cover;
+        width: 100%;
+    }
+    .widget__bottom__desc {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 70%;
+        margin-top: 15px;
+        .widget__bottom__desc__item {
+            font-size: 12px;
+            color: gray;
+            padding: 5px;
+            &:hover {
+                cursor: pointer;
+                color: #0A66C2;
+                text-decoration: underline;
+            }
+        }
+    }
+    .widget__bottom__footer {
+        margin-top:10px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        img {
+            object-fit: contain;
+            height: 15px;
+        }
+    }
+  }
+}
+
+.widget__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+    .widget__row__header{
+        font-size: 14px;
+        color: #333333;
+        font-weight: 600;
+    }
+    .widget__row__desc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        svg {font-size: 8px;}
+        .wr__desc {
+            font-size: 12px;
+            color: #6b6b6b;
+            padding: 5px 10px;
+        }
+    }
+    .middle__row__desc {
+        font-size: 12px;
+        color:gray;
+    }
+    &:hover {
+        background-color: rgba(211, 211, 211, 0.575);
+        cursor: pointer;
+    }
+}
